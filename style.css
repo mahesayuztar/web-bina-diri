@@ -1,0 +1,70 @@
+/* Background full fixed */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    background-position: center;   
+    font-family: 'Open Sans';
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.btn-nostyle {
+    background: none;      /* hilangkan background */
+    border: none;          /* hilangkan border */
+    padding: 0;            /* hilangkan padding */
+    margin: 0;
+    outline: none;
+    box-shadow: none;      /* hilangkan shadow bootstrap */
+    cursor: pointer;       /* tetap jadi button */
+}
+
+.btn-nostyle:focus,
+.btn-nostyle:active {
+    background: none;
+    border: none;
+    box-shadow: none;      /* tetap tidak muncul efek focus bootstrap */
+}
+
+.start-btn {
+    width: 20vw;   /* bebas sesuaikan */
+    height: 28vh;   /* tinggi tombol */
+    cursor: pointer;
+}
+
+.move-btn {
+    width: 13vw;   /* bebas sesuaikan */
+    height: 12vh;   /* tinggi tombol */
+    cursor: pointer;
+}
+  
+.black-square {
+    border: 0.3vw solid black;
+    padding: 1.5vh 1vw 0vh 1vw;
+    line-height: 1;
+}
+
+.text-medium {
+    font-size: 2vw;
+}
+
+.text-small {
+    font-size: 1.8vw;
+}
+
+.text-xsmall {
+    font-size: 1.4vw;
+}
+
+.text-red {
+    color: red !important;
+}

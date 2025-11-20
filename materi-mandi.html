@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Web Bina Diri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="position-absolute start-0 end-0 p-3">
+        <div class="position-absolute start-0 end-0 w-100 h-100 text-black d-flex flex-column align-items-center justify-content-start" style="padding: 5vh 5vw;">
+            <div class="d-flex flex-row gap-4">
+                <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center p-0 text-center" style="width: 15vw; height: 15vh;">
+                    <b>MANDI</b>
+                </div>
+                <div class="text-small" style="width: 75vw;">
+                    <b>Urutan kegiatan mandi yang baik adalah pertama-tama sikat gigi, lalu membersihkan badan dengan sabun, dan terakhir keramas menggunakan sampo.</b>
+                </div>
+            </div>
+            <div class="d-flex flex-row row" style="margin-top: 10vh;">
+                <div class="d-flex flex-column col-4 justify-content-start align-items-center text-center gap-3">
+                    <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center p-0 text-center" style="width: 15vw; height: 15vh;">
+                        SIKAT GIGI
+                    </div>
+                    <div class="text-xsmall" style="width: auto;">
+                        Sikat gigi adalah kegiatan membersihkan gigi agar tetap sehat dan bersih. Kita menggunakan sikat gigi dan pasta gigi untuk menghilangkan kotoran dan sisa makanan. Sikat gigi membuat napas kita segar dan gigi tidak mudah sakit. Ini adalah kegiatan penting yang harus dilakukan setiap hari, pagi dan malam!
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-4 justify-content-start align-items-center text-center gap-3">
+                    <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center p-0 text-center" style="width: 20vw; height: 15vh;">
+                        MEMBERSIHKAN BADAN
+                    </div>
+                    <div class="text-xsmall" style="width: auto;">
+                        Kegiatan membersihkan tubuh kita dengan air bersih dan sabun. Kita bisa menggunakan sabun untuk menghilangkan kotoran dan membuat tubuh terasa segar. 
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-4 justify-content-start align-items-center text-center gap-3">
+                    <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center p-0 text-center" style="width: 15vw; height: 15vh;">
+                        KERAMAS
+                    </div>
+                    <div class="text-xsmall" style="width: auto;">
+                        Keramas adalah kegiatan mencuci rambut dengan menggunakan air dan sampo. Saat keramas, kita membersihkan rambut agar bebas dari kotoran dan minyak. Ini juga membuat rambut wangi dan sehat. Bayangkan seperti memberikan mandi pada rambutmu supaya tetap bersih dan segar!
+                    </div>
+                </div>
+                <audio id="sound" src="audio/materi-mandi.mp3" volume="100"></audio>
+                <button onclick="playSound()" class="btn-nostyle d-flex flex-row justify-content-center align-items-center gap-3 mt-2" style="width: 90vw;">
+                    <img src="play-circle-fill.png" alt="" style="width: 5vw;">
+                    <b class="h1">Putar Suara</b>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

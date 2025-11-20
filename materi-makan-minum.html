@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Web Bina Diri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="position-absolute start-0 end-0 p-3">
+        <div class="position-absolute start-0 end-0 w-100 h-100 text-black d-flex flex-column align-items-center justify-content-start" style="padding: 5vh 5vw;">
+            <div class="d-flex flex-row gap-4">
+                <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center p-0 text-center" style="width: 15vw; height: 15vh;">
+                    <b>MAKAN MINUM</b>
+                </div>
+                <div class="text-small" style="width: 75vw;">
+                    <b>Makan minum adalah kegiatan menikmati makanan dan minuman untuk mendapatkan energi dan nutrisi. Makanan memberi kita kekuatan untuk bermain dan belajar, sementara minuman menjaga tubuh kita tetap segar. Bayangkan makan minum seperti mengisi bahan bakar di mobil, supaya kita bisa bergerak dengan baik dan merasa senang!</b>
+                </div>
+            </div>
+            <div class="d-flex flex-row row" style="margin-top: 10vh;">
+                <div class="d-flex flex-column col-6 justify-content-start align-items-center text-center gap-3">
+                    <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center pt-0 text-center" style="width: 15vw; height: 15vh;">
+                        MAKAN
+                    </div>
+                    <div class="text-xsmall" style="width: auto;">
+                        Makan adalah kegiatan menikmati makanan untuk mendapatkan energi dan nutrisi. Saat kita makan, kita mengisi perut agar merasa kenyang dan siap bermain. Bayangkan makan seperti mengisi bahan bakar di mobil, supaya tubuh kita bisa bergerak dengan baik dan merasa senang!
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-6 justify-content-start align-items-center text-center gap-3">
+                    <div class="text-medium black-square d-flex flex-row justify-content-center align-items-center pt-0 text-center" style="width: 15vw; height: 15vh;">
+                        MINUM
+                    </div>
+                    <div class="text-xsmall" style="width: auto;">
+                        Minum adalah kegiatan mengonsumsi cairan untuk menjaga tubuh tetap segar dan terhidrasi. Air dan minuman sehat membantu kita merasa tidak haus dan bertenaga. Bayangkan minum seperti menyiram tanaman, supaya kita tumbuh dengan baik dan merasa nyaman!
+                    </div>
+                </div>
+            </div>
+            <audio id="sound" src="audio/materi-makan-minum.mp3" volume="100"></audio>
+            <button onclick="playSound()" class="btn-nostyle d-flex flex-row justify-content-center align-items-center gap-3 mt-2" style="width: 90vw;">
+                <img src="play-circle-fill.png" alt="" style="width: 5vw;">
+                <b class="h1">Putar Suara</b>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
