@@ -20,19 +20,6 @@
     <div class="position-absolute start-0 end-0 p-3">
         <div id="board" class="row row-cols-4 g-2 p-3 border">
 
-            <?php
-              $angka = range(1, 8);
-              shuffle($angka);
-              foreach($angka as $i){
-                $src = "'gambar-gambar games\mandi1_".$i.".png'";
-            ?>
-            <div class="col tile d-flex justify-content-center align-items-center border bg-light"
-                 data-id=<?php echo $i; ?>>
-              <img src=<?php echo $src; ?> class="img-fluid">
-            </div>
-            <?php } ?>
-
-          </div>
           <audio id="incorrect" src="incorrect.mp3" volume="100"></audio>
           <audio id="success" src="success.mp3" volume="100"></audio>
           <div class="d-flex flex-row justify-content-between mt-3" style="width: 90vw;">
