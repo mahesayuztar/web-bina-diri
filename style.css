@@ -68,3 +68,11 @@ a:active {
 .text-red {
     color: red !important;
 }
+
+.tile {
+    cursor: move;
+  }
+.tile img {
+    width: 15vw;
+    height: 15vw;
+}
