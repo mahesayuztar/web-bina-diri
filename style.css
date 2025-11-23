@@ -76,3 +76,30 @@ a:active {
     width: 15vw;
     height: 15vw;
 }
+
+/* ANIMASI SEMUANYA */
+  .menu-tile {
+    cursor: pointer;
+  }
+  
+  .menu-tile:hover,
+  .menu-tile:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    background-color: rgba(255,255,255,0.9);
+  }
+
+  .menu-tile:active {
+    transform: translateY(0);            /* balik ke bawah */
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.1);
+  }
+  
+  .move-left {
+    animation: nudgeLeft 3s ease-in-out infinite;
+  }
+
+  @keyframes nudgeLeft {
+    0%, 100% { transform: translateX(0); }
+    50%      { transform: translateX(-1vw); }
+  }
+  

@@ -21,7 +21,7 @@
     <div class="position-absolute start-0 end-0 p-3">
         <audio id="incorrect" src="incorrect.mp3" volume="100"></audio>
         <audio id="success" src="success.mp3" volume="100"></audio>
-        <div id="board1" class="games-board row row-cols-4 g-2 p-3 border">
+        <div id="board1" class="games-board row row-cols-3 g-2 p-3 border" data-tiles="6">
             <div class="d-flex flex-row justify-content-between mt-3" style="width: 90vw;">
                 <a href="games.html" class="btn-nostyle position-relative d-inline-flex align-items-center justify-content-center move-btn">
                     <img src="arrow-fat-left-fill.png"
@@ -45,10 +45,10 @@
                 </button>
             </div> 
             <div class="d-flex flex-row align-items-center justify-content-center mt-4" style="width: 90vw;">
-                <h2>Urutan Gosok Gigi</h2>
+                <h2>Urutan Makan</h2>
             </div>             
         </div> 
-        <div id="board2" class="games-board row row-cols-3 g-2 p-3 border d-none" data-tiles="6">
+        <div id="board2" class="games-board row row-cols-2 g-2 p-3 border d-none" data-tiles="4">
             <div class="d-flex flex-row justify-content-between mt-3" style="width: 90vw;">
                 <button onclick="showElement('#board2','#board1')" class="btn-nostyle position-relative d-inline-flex align-items-center justify-content-center move-btn">
                     <img src="arrow-fat-left-fill.png"
@@ -62,33 +62,6 @@
                     <img src="play-circle-fill.png" alt="" style="width: 5vw;">
                     <b class="h1">Cek Urutan</b>
                 </button>
-                <button onclick="showElement('#board2','#board3')" class="btn-nostyle position-relative d-inline-flex align-items-center justify-content-center move-btn">
-                    <img src="arrow-fat-right-fill.png"
-                        alt=""
-                        class="position-absolute top-0 start-0" style="width: 13vw; height: 12vh;">
-                    <span class="position-relative text-white fw-bold text-uppercase" style="font-size: 1.2vw;">
-                    LANJUT
-                    </span>
-                </button>
-            </div> 
-            <div class="d-flex flex-row align-items-center justify-content-center mt-4" style="width: 90vw;">
-                <h2>Urutan Membersihkan Badan</h2>
-            </div>             
-        </div> 
-        <div id="board3" class="games-board row row-cols-3 g-2 p-3 border d-none" data-tiles="6">
-            <div class="d-flex flex-row justify-content-between mt-3" style="width: 90vw;">
-                <button onclick="showElement('#board3','#board2')" class="btn-nostyle position-relative d-inline-flex align-items-center justify-content-center move-btn">
-                    <img src="arrow-fat-left-fill.png"
-                        alt=""
-                        class="position-absolute top-0 start-0" style="width: 13vw; height: 12vh;">
-                    <span class="position-relative text-white fw-bold text-uppercase" style="font-size: 1.2vw;">
-                    KEMBALI
-                    </span>
-                </button>
-                <button onclick="checkOrder('#board3')" class="btn-nostyle d-flex flex-row justify-content-center align-items-center gap-3 mt-2" style="width: 90vw;">
-                    <img src="play-circle-fill.png" alt="" style="width: 5vw;">
-                    <b class="h1">Cek Urutan</b>
-                </button>
                 <a href="games.html" class="btn-nostyle position-relative d-inline-flex align-items-center justify-content-center move-btn">
                     <img src="arrow-fat-right-fill.png"
                         alt=""
@@ -99,7 +72,7 @@
                 </a>
             </div> 
             <div class="d-flex flex-row align-items-center justify-content-center mt-4" style="width: 90vw;">
-                <h2>Urutan Keramas</h2>
+                <h2>Urutan Minum</h2>
             </div>             
         </div>
     </div>   
